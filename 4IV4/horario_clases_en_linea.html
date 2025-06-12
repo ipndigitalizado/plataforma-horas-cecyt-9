@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EC - Horario 4IV4 EN LINEA</title>
-     <!-- 
-                 --------------- Copyright © 2025 -----------------
-                         Todos los derechos reservados.
-                           Emilio Calep VARGAS YÁÑEZ
-                  DESAROLLADO PARA EL CECYT 9 SIN FINES LUCRATIVOS
-                 ==================================================
-      -->
+    <link rel="icon" href="../img/EC.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!--
+                  ------- Copyright © 2025 -------
+                   Todos los derechos reservados.
+                     Emilio Calep VARGAS YÁÑEZ
+                  DESAROLLADO SIN FINES LUCRATIVOS
+                  ================================
+    -->
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -75,20 +77,17 @@
             display: inline-block;
             padding: 2px 5px;
             border-radius: 3px;
+            text-align: left;
+            width: 100%;
         }
         .materia-link:hover {
             color: #004499;
             text-decoration: underline;
             background-color: #f0f7ff;
         }
-        .whatsapp-btn {
+        .whatsapp-btn, .saes-btn, .plataforma-btn {
             position: fixed;
-            bottom: 20px;
             right: 20px;
-            background-color: #25D366;
-            color: white;
-            width: 60px;
-            height: 60px;
             border-radius: 50%;
             text-align: center;
             display: flex;
@@ -98,16 +97,62 @@
             z-index: 1000;
             transition: transform 0.2s;
         }
-        .whatsapp-btn:hover {
+        .whatsapp-btn {
+            bottom: 120px;
+            background-color: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+        }
+        .saes-btn {
+            bottom: 200px;
+            background-color: #8B0000;
+            color: white;
+            width: 60px;
+            height: 60px;
+            font-weight: bold;
+            font-size: 12px;
+        }
+        .plataforma-btn {
+            bottom: 280px;
+            background-color: #B22222;
+            color: white;
+            width: 60px;
+            height: 60px;
+        }
+        @media (max-width: 768px) {
+            .whatsapp-btn, .saes-btn, .plataforma-btn, .cecyt-btn {
+                width: 50px;
+                height: 50px;
+                right: 15px;
+            }
+            .whatsapp-btn { bottom: 100px; }
+            .saes-btn { bottom: 160px; font-size: 10px; }
+            .plataforma-btn { bottom: 220px; }
+            .whatsapp-btn img, .cecyt-btn img {
+                width: 25px;
+            }
+            .plataforma-btn i {
+                font-size: 20px;
+            }
+        }
+        .whatsapp-btn:hover, .saes-btn:hover, .plataforma-btn:hover {
             transform: scale(1.1);
         }
-        .whatsapp-btn a {
-            color: white;
+        .whatsapp-btn a, .saes-btn a, .plataforma-btn a {
+            color: inherit;
             text-decoration: none;
-            font-size: 12px;
-            font-weight: bold;
             display: block;
             padding: 10px;
+            text-align: center;
+        }
+        td > a {
+            display: block;
+            text-align: left;
+        }
+        .plataforma-btn i {
+            color: white;
+            font-size: 24px;
         }
     </style>
 </head>
@@ -116,12 +161,12 @@
         <h1>Horario Para Clases En Línea</h1>
         <h2>4IV4 - MECATRÓNICA</h2>
         <h3 style="text-align: center; color: #555; margin-bottom: 20px;">
-    Si encuentras algún error o enlace caducado, por favor avísame 
-    <a href="https://wa.me/525625377747?text=Hola,%20encontré%20un%20error%20en%20el%20horario%20de%204IV4" 
-       style="color: #25D366; text-decoration: none; font-weight: bold;">
-        por WhatsApp
-    </a>
-</h3>
+            Si encuentras algún error o enlace caducado, por favor avísame 
+            <a href="https://wa.me/525625377747?text=Hola,%20encontré%20un%20error%20en%20el%20horario%20de%204IV4" 
+               style="color: #25D366; text-decoration: none; font-weight: bold;">
+                por WhatsApp
+            </a>
+        </h3>
         
         <table>
             <tr>
@@ -129,8 +174,6 @@
                 <th>Hora</th>
                 <th>Materia</th>
             </tr>
-            
-            <!-- Lunes -->
             <tr>
                 <td rowspan="3" class="day-lunes">Lunes</td>
                 <td class="time">1:00 - 3:00</td>
@@ -144,8 +187,6 @@
                 <td class="time">7:00 - 9:00</td>
                 <td><a href="https://us06web.zoom.us/j/87064057193?pwd=SroPI2FaFO1C8EaoLQppzciPmcMGo9.1" class="materia-link">Cálculo Diferencial</a></td>
             </tr>
-            
-            <!-- Martes -->
             <tr>
                 <td rowspan="4" class="day-martes">Martes</td>
                 <td class="time">2:00 - 3:00</td>
@@ -163,8 +204,6 @@
                 <td class="time">5:00 - 9:00</td>
                 <td><a href="https://us04web.zoom.us/j/79947324280?pwd=dnvOPPhncrj2aaNmaujSm2Gjcnuwym.1" class="materia-link">Introducción a sistemas digitales</a></td>
             </tr>
-            
-            <!-- Miércoles -->
             <tr>
                 <td rowspan="5" class="day-miercoles">Miércoles</td>
                 <td class="time">1:00 - 3:00</td>
@@ -184,14 +223,12 @@
             </tr>
             <tr>
                 <td class="time">8:00 - 9:00</td>
-                <td><a href="#" class="materia-link">Cálculo Diferencial -CORREO-</a></td>
+                <td><a href="PENDIENTE" class="materia-link">Cálculo Diferencial</a></td>
             </tr>
-            
-            <!-- Jueves -->
             <tr>
                 <td rowspan="3" class="day-jueves">Jueves</td>
                 <td class="time">1:00 - 5:00</td>
-                <td><a href="https://classroom.google.com/c/NzA4MTM5ODQ2Njgw" class="materia-link">Dibujo Técnico II -CLASSROOM-</a></td>
+                <td><a href="https://meet.google.com/gvn-fpop-gup" class="materia-link">Dibujo Técnico II</a></td>
             </tr>
             <tr>
                 <td class="time">5:00 - 7:00</td>
@@ -201,8 +238,6 @@
                 <td class="time">7:00 - 9:00</td>
                 <td><a href="https://teams.microsoft.com/meet/2964891635787?p=n78XaJ6YwAjRmyVXNm" class="materia-link">Simulación de sistemas eléctricos</a></td>
             </tr>
-            
-            <!-- Viernes -->
             <tr>
                 <td rowspan="4" class="day-viernes">Viernes</td>
                 <td class="time">2:00 - 4:00</td>
@@ -224,8 +259,18 @@
     </div>
 
     <div class="whatsapp-btn">
-        <a href="https://wa.me/525625377747?text=Hola,%20encontré%20un%20error%20en%20el%20horario%20de%204IV4" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="30">
+        <a href="https://wa.me/525625377747?text=Creo%20que%20hay%20un%20enlace%20err%C3%B3neo%2Fcaducado" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+        </a>
+    </div>
+
+    <div class="saes-btn">
+        <a href="https://www.saes.cecyt9.ipn.mx/" target="_blank">SAES</a>
+    </div>
+
+    <div class="plataforma-btn">
+        <a href="https://ipndigitalizado.github.io/plataforma-horas-cecyt-9/" target="_blank">
+            <i class="fas fa-laptop-code"></i>
         </a>
     </div>
 </body>
