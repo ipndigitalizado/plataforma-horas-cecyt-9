@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EC - Horario 4IV4 EN LINEA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+        .container {
+            max-width: 900px;
+            width: 100%;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        h2 {
+            text-align: center;
+            color: #000441;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        th, td {
+            border: 1px solid #e0e0e0;
+            padding: 12px;
+            text-align: center;
+        }
+        th {
+            background-color: #000441;
+            color: white;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .time {
+            font-weight: bold;
+            color: #333;
+        }
+        .day-lunes, .day-miercoles, .day-viernes {
+            font-weight: bold;
+            background-color: #d6e0f0 !important;
+        }
+        .day-martes, .day-jueves {
+            font-weight: bold;
+            background-color: #e6f0ff !important;
+        }
+        .materia-link {
+            color: #0066cc;
+            text-decoration: none;
+            transition: color 0.2s;
+            display: inline-block;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+        .materia-link:hover {
+            color: #004499;
+            text-decoration: underline;
+            background-color: #f0f7ff;
+        }
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            transition: transform 0.2s;
+        }
+        .whatsapp-btn:hover {
+            transform: scale(1.1);
+        }
+        .whatsapp-btn a {
+            color: white;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: bold;
+            display: block;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Horario Para Clases En Linea</h1>
+        <h2>4IV4 - MECATRÓNICA</h2>
+        
+        <table>
+            <tr>
+                <th>Día</th>
+                <th>Hora</th>
+                <th>Materia</th>
+            </tr>
+            
+            <!-- Lunes -->
+            <tr>
+                <td rowspan="3" class="day-lunes">Lunes</td>
+                <td class="time">1:00 - 3:00</td>
+                <td><a href="https://us05web.zoom.us/j/5882326761?pwd=M3RzbVdLUEo5NkxBc0dFdDNLNzM2UT09" class="materia-link">Química IV</a></td>
+            </tr>
+            <tr>
+                <td class="time">3:00 - 7:00</td>
+                <td><a href="https://cuaieed-unam.zoom.us/j/86460879590?pwd=3hV67zR2hy2JxmFMTQuJpjcMa4M0RV.1" class="materia-link">Mecanizado de piezas para sistemas mecatrónicos</a></td>
+            </tr>
+            <tr>
+                <td class="time">7:00 - 9:00</td>
+                <td><a href="https://us06web.zoom.us/j/87064057193?pwd=SroPI2FaFO1C8EaoLQppzciPmcMGo9.1" class="materia-link">Cálculo Diferencial</a></td>
+            </tr>
+            
+            <!-- Martes -->
+            <tr>
+                <td rowspan="4" class="day-martes">Martes</td>
+                <td class="time">2:00 - 3:00</td>
+                <td><a href="https://classroom.google.com/c/Njg4NjY0OTkyODI1" class="materia-link">Física II</a></td>
+            </tr>
+            <tr>
+                <td class="time">3:00 - 4:00</td>
+                <td><a href="https://us05web.zoom.us/j/84612489082?pwd=aBgqD06wGCGF5qnb2KtEmerObHziZm.1" class="materia-link">Inglés IV</a></td>
+            </tr>
+            <tr>
+                <td class="time">4:00 - 5:00</td>
+                <td><a href="https://teams.microsoft.com/meet/2964891635787?p=n78XaJ6YwAjRmyVXNm" class="materia-link">Simulación de sistemas eléctricos</a></td>
+            </tr>
+            <tr>
+                <td class="time">5:00 - 9:00</td>
+                <td><a href="https://us04web.zoom.us/j/79947324280?pwd=dnvOPPhncrj2aaNmaujSm2Gjcnuwym.1" class="materia-link">Introducción a sistemas digitales</a></td>
+            </tr>
+            
+            <!-- Miércoles -->
+            <tr>
+                <td rowspan="5" class="day-miercoles">Miércoles</td>
+                <td class="time">1:00 - 3:00</td>
+                <td><a href="https://classroom.google.com/c/Njg4NjY0OTkyODI1" class="materia-link">Física II</a></td>
+            </tr>
+            <tr>
+                <td class="time">3:00 - 5:00</td>
+                <td><a href="https://us05web.zoom.us/j/5882326761?pwd=M3RzbVdLUEo5NkxBc0dFdDNLNzM2UT09" class="materia-link">Química II</a></td>
+            </tr>
+            <tr>
+                <td class="time">5:00 - 7:00</td>
+                <td><a href="https://teams.microsoft.com/meet/2409543867956?p=1D3TLbmhLH29bZ6jy3" class="materia-link">Lenguaje de programación</a></td>
+            </tr>
+            <tr>
+                <td class="time">7:00 - 8:00</td>
+                <td><a href="https://us05web.zoom.us/j/84612489082?pwd=aBgqD06wGCGF5qnb2KtEmerObHziZm.1" class="materia-link">Inglés IV</a></td>
+            </tr>
+            <tr>
+                <td class="time">8:00 - 9:00</td>
+                <td><a href="PENDIENTE" class="materia-link">Cálculo Diferencial</a></td>
+            </tr>
+            
+            <!-- Jueves -->
+            <tr>
+                <td rowspan="3" class="day-jueves">Jueves</td>
+                <td class="time">1:00 - 5:00</td>
+                <td><a href="https://meet.google.com/gvn-fpop-gup" class="materia-link">Dibujo Técnico II</a></td>
+            </tr>
+            <tr>
+                <td class="time">5:00 - 7:00</td>
+                <td><a href="https://us05web.zoom.us/j/84612489082?pwd=aBgqD06wGCGF5qnb2KtEmerObHziZm.1" class="materia-link">Inglés IV</a></td>
+            </tr>
+            <tr>
+                <td class="time">7:00 - 8:00</td>
+                <td><a href="https://teams.microsoft.com/meet/2964891635787?p=n78XaJ6YwAjRmyVXNm" class="materia-link">Simulación de sistemas eléctricos</a></td>
+            </tr>
+            
+            <!-- Viernes -->
+            <tr>
+                <td rowspan="4" class="day-viernes">Viernes</td>
+                <td class="time">2:00 - 4:00</td>
+                <td><a href="https://classroom.google.com/c/Njg4NjY0OTkyODI1" class="materia-link">Física II</a></td>
+            </tr>
+            <tr>
+                <td class="time">4:00 - 6:00</td>
+                <td><a href="https://teams.microsoft.com/meet/2409543867956?p=1D3TLbmhLH29bZ6jy3" class="materia-link">Lenguaje de programación</a></td>
+            </tr>
+            <tr>
+                <td class="time">6:00 - 7:00</td>
+                <td><a href="https://us05web.zoom.us/j/84612489082?pwd=aBgqD06wGCGF5qnb2KtEmerObHziZm.1" class="materia-link">Inglés IV</a></td>
+            </tr>
+            <tr>
+                <td class="time">7:00 - 8:00</td>
+                <td><a href="https://us06web.zoom.us/j/87064057193?pwd=SroPI2FaFO1C8EaoLQppzciPmcMGo9.1" class="materia-link">Cálculo Diferencial</a></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="whatsapp-btn">
+        <a href="https://wa.me/525625377747?text=Creo%20que%20hay%20un%20enlace%20err%C3%B3neo%2Fcaducado" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="30">
+        </a>
+    </div>
+</body>
+</html>
