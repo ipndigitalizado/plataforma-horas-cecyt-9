@@ -61,14 +61,22 @@
         .time {
             font-weight: bold;
             color: #333;
+            width: 120px;
         }
         .day-lunes, .day-miercoles, .day-viernes {
             font-weight: bold;
             background-color: #d6e0f0 !important;
+            width: 100px;
         }
         .day-martes, .day-jueves {
             font-weight: bold;
             background-color: #e6f0ff !important;
+            width: 100px;
+        }
+        .materia {
+            text-align: left;
+            padding-left: 15px;
+            padding-right: 15px;
         }
         .materia-link {
             color: #0066cc;
@@ -78,7 +86,6 @@
             padding: 2px 5px;
             border-radius: 3px;
             text-align: left;
-            width: 100%;
         }
         .materia-link:hover {
             color: #004499;
@@ -104,6 +111,10 @@
             width: 60px;
             height: 60px;
         }
+        .whatsapp-btn img {
+            width: 30px;
+            height: 30px;
+        }
         .saes-btn {
             bottom: 200px;
             background-color: #8B0000;
@@ -121,7 +132,7 @@
             height: 60px;
         }
         @media (max-width: 768px) {
-            .whatsapp-btn, .saes-btn, .plataforma-btn, .cecyt-btn {
+            .whatsapp-btn, .saes-btn, .plataforma-btn {
                 width: 50px;
                 height: 50px;
                 right: 15px;
@@ -129,11 +140,18 @@
             .whatsapp-btn { bottom: 100px; }
             .saes-btn { bottom: 160px; font-size: 10px; }
             .plataforma-btn { bottom: 220px; }
-            .whatsapp-btn img, .cecyt-btn img {
+            .whatsapp-btn img {
                 width: 25px;
+                height: 25px;
             }
             .plataforma-btn i {
                 font-size: 20px;
+            }
+            .time {
+                width: auto;
+            }
+            .day-lunes, .day-martes, .day-miercoles, .day-jueves, .day-viernes {
+                width: auto;
             }
         }
         .whatsapp-btn:hover, .saes-btn:hover, .plataforma-btn:hover {
@@ -145,10 +163,6 @@
             display: block;
             padding: 10px;
             text-align: center;
-        }
-        td > a {
-            display: block;
-            text-align: left;
         }
         .plataforma-btn i {
             color: white;
@@ -177,83 +191,83 @@
             <tr>
                 <td rowspan="3" class="day-lunes">Lunes</td>
                 <td class="time">1:00 - 3:00</td>
-                <td><a href="https://us05web.zoom.us/j/5882326761?pwd=M3RzbVdLUEo5NkxBc0dFdDNLNzM2UT09" class="materia-link">Química IV</a></td>
+                <td class="materia"><a href="https://us05web.zoom.us/j/5882326761?pwd=M3RzbVdLUEo5NkxBc0dFdDNLNzM2UT09" class="materia-link">Química IV</a></td>
             </tr>
             <tr>
                 <td class="time">3:00 - 7:00</td>
-                <td><a href="https://cuaieed-unam.zoom.us/j/86460879590?pwd=3hV67zR2hy2JxmFMTQuJpjcMa4M0RV.1" class="materia-link">Mecanizado de piezas para sistemas mecatrónicos</a></td>
+                <td class="materia"><a href="https://cuaieed-unam.zoom.us/j/86460879590?pwd=3hV67zR2hy2JxmFMTQuJpjcMa4M0RV.1" class="materia-link">Mecanizado de piezas para sistemas mecatrónicos</a></td>
             </tr>
             <tr>
                 <td class="time">7:00 - 9:00</td>
-                <td><a href="https://us06web.zoom.us/j/87064057193?pwd=SroPI2FaFO1C8EaoLQppzciPmcMGo9.1" class="materia-link">Cálculo Diferencial</a></td>
+                <td class="materia"><a href="https://us06web.zoom.us/j/87064057193?pwd=SroPI2FaFO1C8EaoLQppzciPmcMGo9.1" class="materia-link">Cálculo Diferencial</a></td>
             </tr>
             <tr>
                 <td rowspan="4" class="day-martes">Martes</td>
                 <td class="time">2:00 - 3:00</td>
-                <td><a href="https://classroom.google.com/c/Njg4NjY0OTkyODI1" class="materia-link">Física II</a></td>
+                <td class="materia"><a href="https://classroom.google.com/c/Njg4NjY0OTkyODI1" class="materia-link">Física II</a></td>
             </tr>
             <tr>
                 <td class="time">3:00 - 4:00</td>
-                <td><a href="https://us05web.zoom.us/j/84612489082?pwd=aBgqD06wGCGF5qnb2KtEmerObHziZm.1" class="materia-link">Inglés IV</a></td>
+                <td class="materia"><a href="https://us05web.zoom.us/j/84612489082?pwd=aBgqD06wGCGF5qnb2KtEmerObHziZm.1" class="materia-link">Inglés IV</a></td>
             </tr>
             <tr>
                 <td class="time">4:00 - 5:00</td>
-                <td><a href="https://teams.microsoft.com/meet/2964891635787?p=n78XaJ6YwAjRmyVXNm" class="materia-link">Simulación de sistemas eléctricos</a></td>
+                <td class="materia"><a href="https://teams.microsoft.com/meet/2964891635787?p=n78XaJ6YwAjRmyVXNm" class="materia-link">Simulación de sistemas eléctricos</a></td>
             </tr>
             <tr>
                 <td class="time">5:00 - 9:00</td>
-                <td><a href="https://us04web.zoom.us/j/79947324280?pwd=dnvOPPhncrj2aaNmaujSm2Gjcnuwym.1" class="materia-link">Introducción a sistemas digitales</a></td>
+                <td class="materia"><a href="https://us04web.zoom.us/j/79947324280?pwd=dnvOPPhncrj2aaNmaujSm2Gjcnuwym.1" class="materia-link">Introducción a sistemas digitales</a></td>
             </tr>
             <tr>
                 <td rowspan="5" class="day-miercoles">Miércoles</td>
                 <td class="time">1:00 - 3:00</td>
-                <td><a href="https://classroom.google.com/c/Njg4NjY0OTkyODI1" class="materia-link">Física II</a></td>
+                <td class="materia"><a href="https://classroom.google.com/c/Njg4NjY0OTkyODI1" class="materia-link">Física II</a></td>
             </tr>
             <tr>
                 <td class="time">3:00 - 5:00</td>
-                <td><a href="https://us05web.zoom.us/j/5882326761?pwd=M3RzbVdLUEo5NkxBc0dFdDNLNzM2UT09" class="materia-link">Química II</a></td>
+                <td class="materia"><a href="https://us05web.zoom.us/j/5882326761?pwd=M3RzbVdLUEo5NkxBc0dFdDNLNzM2UT09" class="materia-link">Química II</a></td>
             </tr>
             <tr>
                 <td class="time">5:00 - 7:00</td>
-                <td><a href="https://teams.microsoft.com/meet/2409543867956?p=1D3TLbmhLH29bZ6jy3" class="materia-link">Lenguaje de programación</a></td>
+                <td class="materia"><a href="https://teams.microsoft.com/meet/2409543867956?p=1D3TLbmhLH29bZ6jy3" class="materia-link">Lenguaje de programación</a></td>
             </tr>
             <tr>
                 <td class="time">7:00 - 8:00</td>
-                <td><a href="https://us05web.zoom.us/j/84612489082?pwd=aBgqD06wGCGF5qnb2KtEmerObHziZm.1" class="materia-link">Inglés IV</a></td>
+                <td class="materia"><a href="https://us05web.zoom.us/j/84612489082?pwd=aBgqD06wGCGF5qnb2KtEmerObHziZm.1" class="materia-link">Inglés IV</a></td>
             </tr>
             <tr>
                 <td class="time">8:00 - 9:00</td>
-                <td><a href="PENDIENTE" class="materia-link">Cálculo Diferencial</a></td>
+                <td class="materia"><a href="PENDIENTE" class="materia-link">Cálculo Diferencial</a></td>
             </tr>
             <tr>
                 <td rowspan="3" class="day-jueves">Jueves</td>
                 <td class="time">1:00 - 5:00</td>
-                <td><a href="https://meet.google.com/gvn-fpop-gup" class="materia-link">Dibujo Técnico II</a></td>
+                <td class="materia"><a href="https://meet.google.com/gvn-fpop-gup" class="materia-link">Dibujo Técnico II</a></td>
             </tr>
             <tr>
                 <td class="time">5:00 - 7:00</td>
-                <td><a href="https://us05web.zoom.us/j/84612489082?pwd=aBgqD06wGCGF5qnb2KtEmerObHziZm.1" class="materia-link">Inglés IV</a></td>
+                <td class="materia"><a href="https://us05web.zoom.us/j/84612489082?pwd=aBgqD06wGCGF5qnb2KtEmerObHziZm.1" class="materia-link">Inglés IV</a></td>
             </tr>
             <tr>
                 <td class="time">7:00 - 9:00</td>
-                <td><a href="https://teams.microsoft.com/meet/2964891635787?p=n78XaJ6YwAjRmyVXNm" class="materia-link">Simulación de sistemas eléctricos</a></td>
+                <td class="materia"><a href="https://teams.microsoft.com/meet/2964891635787?p=n78XaJ6YwAjRmyVXNm" class="materia-link">Simulación de sistemas eléctricos</a></td>
             </tr>
             <tr>
                 <td rowspan="4" class="day-viernes">Viernes</td>
                 <td class="time">2:00 - 4:00</td>
-                <td><a href="https://classroom.google.com/c/Njg4NjY0OTkyODI1" class="materia-link">Física II</a></td>
+                <td class="materia"><a href="https://classroom.google.com/c/Njg4NjY0OTkyODI1" class="materia-link">Física II</a></td>
             </tr>
             <tr>
                 <td class="time">4:00 - 6:00</td>
-                <td><a href="https://teams.microsoft.com/meet/2409543867956?p=1D3TLbmhLH29bZ6jy3" class="materia-link">Lenguaje de programación</a></td>
+                <td class="materia"><a href="https://teams.microsoft.com/meet/2409543867956?p=1D3TLbmhLH29bZ6jy3" class="materia-link">Lenguaje de programación</a></td>
             </tr>
             <tr>
                 <td class="time">6:00 - 7:00</td>
-                <td><a href="https://us05web.zoom.us/j/84612489082?pwd=aBgqD06wGCGF5qnb2KtEmerObHziZm.1" class="materia-link">Inglés IV</a></td>
+                <td class="materia"><a href="https://us05web.zoom.us/j/84612489082?pwd=aBgqD06wGCGF5qnb2KtEmerObHziZm.1" class="materia-link">Inglés IV</a></td>
             </tr>
             <tr>
                 <td class="time">7:00 - 9:00</td>
-                <td><a href="https://us06web.zoom.us/j/87064057193?pwd=SroPI2FaFO1C8EaoLQppzciPmcMGo9.1" class="materia-link">Cálculo Diferencial</a></td>
+                <td class="materia"><a href="https://us06web.zoom.us/j/87064057193?pwd=SroPI2FaFO1C8EaoLQppzciPmcMGo9.1" class="materia-link">Cálculo Diferencial</a></td>
             </tr>
         </table>
     </div>
