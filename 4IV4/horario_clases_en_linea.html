@@ -94,7 +94,7 @@
             text-decoration: underline;
             background-color: #f0f7ff;
         }
-        .whatsapp-btn, .saes-btn, .plataforma-btn {
+        .whatsapp-btn, .saes-btn, .plataforma-btn, .evaluacion-btn {
             position: fixed;
             right: 20px;
             border-radius: 50%;
@@ -133,11 +133,20 @@
             width: 60px;
             height: 60px;
         }
+        .evaluacion-btn {
+            bottom: 360px;
+            background-color: #4CAF50;
+            color: white;
+            width: 60px;
+            height: 60px;
+            font-weight: bold;
+            font-size: 12px;
+        }
         @media (max-width: 768px) {
             body {
                 padding: 15px;
             }
-            .whatsapp-btn, .saes-btn, .plataforma-btn {
+            .whatsapp-btn, .saes-btn, .plataforma-btn, .evaluacion-btn {
                 width: 50px;
                 height: 50px;
                 right: 15px;
@@ -145,6 +154,7 @@
             .whatsapp-btn { bottom: 100px; }
             .saes-btn { bottom: 160px; font-size: 10px; }
             .plataforma-btn { bottom: 220px; }
+            .evaluacion-btn { bottom: 280px; font-size: 10px; }
             .whatsapp-btn img {
                 width: 25px;
                 height: 25px;
@@ -163,17 +173,17 @@
                 font-size: 14px;
             }
         }
-        .whatsapp-btn:hover, .saes-btn:hover, .plataforma-btn:hover {
+        .whatsapp-btn:hover, .saes-btn:hover, .plataforma-btn:hover, .evaluacion-btn:hover {
             transform: scale(1.1);
         }
-        .whatsapp-btn a, .saes-btn a, .plataforma-btn a {
+        .whatsapp-btn a, .saes-btn a, .plataforma-btn a, .evaluacion-btn a {
             color: inherit;
             text-decoration: none;
             display: block;
             padding: 10px;
             text-align: center;
         }
-        .plataforma-btn i {
+        .plataforma-btn i, .evaluacion-btn i {
             color: white;
             font-size: 24px;
         }
@@ -317,6 +327,12 @@
     <div class="plataforma-btn">
         <a href="https://ipndigitalizado.github.io/plataforma-horas-cecyt-9/" target="_blank">
             <i class="fas fa-laptop-code"></i>
+        </a>
+    </div>
+
+    <div class="evaluacion-btn">
+        <a href="https://docs.google.com/document/d/1XnslU50HpqN8F2Sb7YPFj2YBRazFJZtOZ_XsWGFVD0s/edit?usp=sharing" target="_blank">
+            <i class="fas fa-clipboard-list"></i>
         </a>
     </div>
 </body>
