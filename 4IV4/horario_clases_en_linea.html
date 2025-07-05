@@ -86,106 +86,12 @@
             transition: color 0.2s;
             display: inline-block;
             padding: 2px 5px;
-            border-radius: 3px;
             text-align: left;
         }
         .materia-link:hover {
             color: #004499;
             text-decoration: underline;
             background-color: #f0f7ff;
-        }
-        .whatsapp-btn, .saes-btn, .plataforma-btn, .evaluacion-btn {
-            position: fixed;
-            right: 20px;
-            border-radius: 50%;
-            text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            z-index: 1000;
-            transition: transform 0.2s;
-        }
-        .whatsapp-btn {
-            bottom: 120px;
-            background-color: #25D366;
-            color: white;
-            width: 60px;
-            height: 60px;
-        }
-        .whatsapp-btn img {
-            width: 30px;
-            height: 30px;
-        }
-        .saes-btn {
-            bottom: 200px;
-            background-color: #8B0000;
-            color: white;
-            width: 60px;
-            height: 60px;
-            font-weight: bold;
-            font-size: 12px;
-        }
-        .plataforma-btn {
-            bottom: 280px;
-            background-color: #B22222;
-            color: white;
-            width: 60px;
-            height: 60px;
-        }
-        .evaluacion-btn {
-            bottom: 360px;
-            background-color: #5952be;
-            color: white;
-            width: 60px;
-            height: 60px;
-            font-weight: bold;
-            font-size: 12px;
-        }
-        @media (max-width: 768px) {
-            body {
-                padding: 15px;
-            }
-            .whatsapp-btn, .saes-btn, .plataforma-btn, .evaluacion-btn {
-                width: 50px;
-                height: 50px;
-                right: 15px;
-            }
-            .whatsapp-btn { bottom: 100px; }
-            .saes-btn { bottom: 160px; font-size: 10px; }
-            .plataforma-btn { bottom: 220px; }
-            .evaluacion-btn { bottom: 280px; font-size: 10px; }
-            .whatsapp-btn img {
-                width: 25px;
-                height: 25px;
-            }
-            .plataforma-btn i {
-                font-size: 20px;
-            }
-            .time {
-                width: auto;
-            }
-            .day-lunes, .day-martes, .day-miercoles, .day-jueves, .day-viernes {
-                width: auto;
-            }
-            .footer {
-                padding: 12px 10px;
-                font-size: 14px;
-            }
-        }
-        .whatsapp-btn:hover, .saes-btn:hover, .plataforma-btn:hover, .evaluacion-btn:hover {
-            transform: scale(1.1);
-        }
-        .whatsapp-btn a, .saes-btn a, .plataforma-btn a, .evaluacion-btn a {
-            color: inherit;
-            text-decoration: none;
-            display: block;
-            padding: 10px;
-            text-align: center;
-        }
-        .plataforma-btn i, .evaluacion-btn i {
-            color: white;
-            font-size: 24px;
         }
         .footer {
             width: 100%;
@@ -206,6 +112,86 @@
         .footer a:hover {
             text-decoration: underline;
         }
+        
+        /* Nuevo estilo para el tablón de anuncios */
+        .tablon-contenedor {
+            width: 100%;
+            max-width: 900px;
+            background-color: #e0e0e0;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+        
+        .tablon-anuncios {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            width: 100%;
+        }
+        .anuncio {
+            background-color: white;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+            width: calc(25% - 15px);
+            min-width: 200px;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.3s;
+            border: 1px solid #d0d0d0;
+        }
+        .anuncio:hover {
+            transform: translateY(-3px);
+        }
+        .anuncio-icono {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #000441;
+        }
+        .anuncio-titulo {
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: center;
+            color: #333;
+            font-size: 14px;
+        }
+        .anuncio-boton {
+            background-color: #000441;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            width: 100%;
+            transition: background-color 0.3s;
+            font-size: 13px;
+        }
+        .anuncio-boton:hover {
+            background-color: #001166;
+        }
+        @media (max-width: 768px) {
+            .anuncio {
+                width: calc(50% - 15px);
+            }
+            .time {
+                width: auto;
+            }
+            .day-lunes, .day-martes, .day-miercoles, .day-jueves, .day-viernes {
+                width: auto;
+            }
+            .footer {
+                padding: 12px 10px;
+                font-size: 14px;
+            }
+        }
+        @media (max-width: 480px) {
+            .anuncio {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -214,12 +200,50 @@
         <h2>4IV4 - MECATRÓNICA</h2>
         <h3 style="text-align: center; color: #555; margin-bottom: 20px;">
             Si encuentras algún error o enlace caducado, por favor avísame 
-            <a href="https://wa.me/525625377747?text=Hola,%20encontré%20un%20error%20en%20el%20horario%20de%204IV4" 
+            <a href="#" 
                style="color: #25D366; text-decoration: none; font-weight: bold;">
                 por WhatsApp
             </a>
         </h3>
         
+        <!-- Tablón de anuncios arriba de la tabla -->
+        <div class="tablon-contenedor">
+            <div class="tablon-anuncios">
+                <div class="anuncio">
+                    <div class="anuncio-icono">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div class="anuncio-titulo">Reportar Error</div>
+                    <a href="https://wa.me/525625377747?text=Hola,%20encontré%20un%20error%20en%20el%20horario%20de%204IV4" class="anuncio-boton" target="_blank">Contactar</a>
+                </div>
+                
+                <div class="anuncio">
+                    <div class="anuncio-icono">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="anuncio-titulo">SAES <strong>Ya habilitado</strong></div>
+                    <a href="https://www.saes.cecyt9.ipn.mx/" class="anuncio-boton" target="_blank">Ir a SAES</a>
+                </div>
+                
+                <div class="anuncio">
+                    <div class="anuncio-icono">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="anuncio-titulo">Plataforma HORAS</div>
+                    <a href="https://ipndigitalizado.github.io/plataforma-horas-cecyt-9/" class="anuncio-boton" target="_blank">Acceder</a>
+                </div>
+                
+                <div class="anuncio">
+                    <div class="anuncio-icono">
+                        <i class="fas fa-clipboard-list"></i>
+                    </div>
+                    <div class="anuncio-titulo">Formas de Evaluación</div>
+                    <a href="https://docs.google.com/document/d/1XnslU50HpqN8F2Sb7YPFj2YBRazFJZtOZ_XsWGFVD0s/edit?usp=sharing" class="anuncio-boton" target="_blank">Ver Documento</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Tabla de horario -->
         <table>
             <tr>
                 <th>Día</th>
@@ -312,28 +336,6 @@
 
     <div class="footer">
         Esta página fue desarrollada gracias al programa <strong>IPN DIGITALIZADO</strong> implementado por <a href="https://emiliocolor.github.io/mx" target="_blank">EmilioColor®</a>
-    </div>
-
-    <div class="whatsapp-btn">
-        <a href="https://wa.me/525625377747?text=Creo%20que%20hay%20un%20enlace%20err%C3%B3neo%2Fcaducado" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-        </a>
-    </div>
-
-    <div class="saes-btn">
-        <a href="https://www.saes.cecyt9.ipn.mx/" target="_blank">SAES</a>
-    </div>
-
-    <div class="plataforma-btn">
-        <a href="https://ipndigitalizado.github.io/plataforma-horas-cecyt-9/" target="_blank">
-            <i class="fas fa-laptop-code"></i>
-        </a>
-    </div>
-
-    <div class="evaluacion-btn">
-        <a href="https://docs.google.com/document/d/1XnslU50HpqN8F2Sb7YPFj2YBRazFJZtOZ_XsWGFVD0s/edit?usp=sharing" target="_blank">
-            <i class="fas fa-clipboard-list"></i>
-        </a>
     </div>
 </body>
 </html>
